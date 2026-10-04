@@ -1,0 +1,13 @@
+{
+  "name": "skesis",
+  "private": true,
+  "version": "1.0.0",
+  "description": "Skesis: plataforma web para el seguimiento de hábitos saludables",
+  "scripts": {
+    "setup": "npm install && npm --prefix skesis/backend install && npm --prefix skesis/frontend install",
+    "dev": "concurrently -n backend,frontend -c green,cyan \"npm --prefix skesis/backend run dev\" \"npm --prefix skesis/frontend run dev -- --host\""
+  },
+  "devDependencies": {
+    "concurrently": "^9.0.0"
+  }
+}
