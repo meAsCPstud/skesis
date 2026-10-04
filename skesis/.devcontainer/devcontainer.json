@@ -1,0 +1,11 @@
+{
+  "name": "Skesis",
+  "image": "mcr.microsoft.com/devcontainers/javascript-node:1-20-bookworm",
+  "postCreateCommand": "npm run setup",
+  "postAttachCommand": "npm run dev",
+  "forwardPorts": [5173, 4000],
+  "portsAttributes": {
+    "5173": { "label": "Skesis (web)", "onAutoForward": "openBrowser" },
+    "4000": { "label": "Skesis (API)", "onAutoForward": "silent" }
+  }
+}
